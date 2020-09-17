@@ -5,6 +5,7 @@ import AllPosts from '../AllPosts/AllPosts';
 const Post = () => {
     const [post, setPost] = useState([]);
 
+    // post data load from json..
     
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
