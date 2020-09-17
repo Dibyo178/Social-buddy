@@ -5,10 +5,10 @@ import AllPosts from '../AllPosts/AllPosts';
 const Post = () => {
     const [post, setPost] = useState([]);
 
-    //get post data
+    
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => setPost(data))
     }, [])
     return (
